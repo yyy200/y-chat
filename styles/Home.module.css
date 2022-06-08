@@ -54,6 +54,8 @@
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;
+  width: 80%;
+  overflow: auto;
 }
 
 .code {
@@ -113,4 +115,23 @@
     width: 100%;
     flex-direction: column;
   }
+}
+
+.messages {
+  display: grid;
+  position: relative;
+
+  grid-auto-flow: dense;
+  /* flex-direction: column-REVERSE; */
+
+  /* justify-content: flex-end; */
+
+  gap: 0.5em;
+
+  min-height: 40vh;
+  height: min-content;
+  max-height: 60vh;
+  overflow-y: scroll;
+
+  padding: 1em;
 }
